@@ -17,7 +17,7 @@ do
     cd bundle
     echo "Cloning:" $url
     git clone $url
-    cd > /dev/null
+    cd - > /dev/null
   fi
 done < ./plugins.txt
 
