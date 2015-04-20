@@ -2,7 +2,7 @@
 set -e
 set -u
 
-rm -rf ./pkgs.txt
+rm -rf ./plugins.txt
 for dir in $(ls -1d bundle/*/)
 do
     echo "$dir" $(grep "url" "$dir/.git/config" | sed 's/^.*= //') >> ./plugins.txt
