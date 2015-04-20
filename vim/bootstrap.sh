@@ -11,6 +11,7 @@ if [[ -e $SCRIPT_DIR ]]; then
   cd $VIM_DIR
   git pull
 else
+  mkdir -p $SCRIPT_DIR
   cd $SCRIPT_DIR
   git clone $REPO
 fi
