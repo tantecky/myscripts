@@ -1,5 +1,5 @@
 # myscripts
-Collections of my scripts/configs
+Collections of my scripts/configs.
 To install all: `curl -sL http://tinyurl.com/tantecky`
 
 ## vim
