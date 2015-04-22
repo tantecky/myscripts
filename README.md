@@ -5,4 +5,4 @@ Collections of my scripts/configs
 My Vim setup. To install: `curl -sL http://tinyurl.com/dotvimrc`
 
 ## .bashrc
-My .bashrc setup. To install: `http://tinyurl.com/dotbashrc`
+My .bashrc setup. To install: `curl -sL http://tinyurl.com/dotbashrc`

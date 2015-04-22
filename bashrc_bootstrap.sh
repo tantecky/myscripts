@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+set -u
+set -e
+
 REPO='https://github.com/tantecky/myscripts.git'
 SCRIPT_DIR="~/myscripts"
 eval SCRIPT_DIR=$SCRIPT_DIR
@@ -21,3 +24,4 @@ else
 fi
 
 ln -sf $SCRIPT_DIR/bashrc.my ~/.bashrc.my
+. ~/.bashrc.my
