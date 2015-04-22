@@ -12,9 +12,12 @@ else
 fi
 
 if [[ -e ~/.bashrc ]]; then
+  # need .bashrc patching
   if [[ $(grep -c bashrc\.my ~/.bashrc) -eq 0 ]]; then
-
+    echo -e '\n# my bashrc\nif [ -f ~/.bashrc.my ]; then . ~/.bashrc.my; fi' >> ~/.bashrc
   fi
+else
+  echo -e '\n# my bashrc\nif [ -f ~/.bashrc.my ]; then . ~/.bashrc.my; fi' >> ~/.bashrc
 fi
 
-ln -sf $SCRIPT_DIR/
+ln -sf $SCRIPT_DIR/bashrc.my ~/.bashrc.my
