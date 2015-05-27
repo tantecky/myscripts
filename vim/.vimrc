@@ -160,6 +160,7 @@ augroup python
   autocmd BufEnter *.py setlocal ft=python
   autocmd BufEnter *.py setlocal textwidth=80
   autocmd BufEnter *.py iabbrev <buffer> ana #!/usr/sw/python/anaconda/bin/python
+  autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto <cr>
 augroup END
 
 augroup filetypedetect
