@@ -163,6 +163,11 @@ augroup python
   autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto <cr>
 augroup END
 
+augroup cse
+  autocmd!
+  autocmd BufEnter *.cse setlocal ft=perl
+augroup END
+
 augroup filetypedetect
   autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
 augroup END

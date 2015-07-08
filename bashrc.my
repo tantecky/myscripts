@@ -1,3 +1,8 @@
+if [ -z $BASH ]; then
+  echo '~/myscripts works only under Bash'
+  return
+fi
+
 PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]:(\[\033[01;34m\] \")\\$\[\033[00m\] "
 
 abs_fce() {
@@ -22,6 +27,7 @@ if [[ $(uname) == 'FreeBSD' ]]; then
   export TERM=xterm-color
   export LSCOLORS=Exfxcxdxbxegedabagacad
   alias ll='ls -lGA'
+  alias ls='ls -G'
 else # Linux I guess
   alias ll='ls -lA --color=auto'
 fi
