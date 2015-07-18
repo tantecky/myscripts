@@ -32,4 +32,5 @@ if [[ $(uname) == 'FreeBSD' ]]; then
 fi
 
 ln -sf $SCRIPT_DIR/bashrc.my ~/.bashrc.my
+set +u
 . ~/.bashrc.my
