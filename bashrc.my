@@ -1,3 +1,10 @@
+if [ ! -z $MYSCRIPTS_DEFINED ]; then
+  echo 'not defined'
+  export MYSCRIPTS_DEFINED=1
+  return
+fi
+
+
 if [ -z $BASH ]; then
   echo '~/myscripts works only under Bash'
   return

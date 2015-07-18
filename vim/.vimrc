@@ -35,6 +35,10 @@ set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
 set wildmode=full
+set colorcolumn=81
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
+
 "vypne foldovani pri startu
 set nofoldenable
 set autochdir
@@ -44,7 +48,6 @@ set background=dark
 if has('gui_running')
   set lines=999 columns=999
   colorscheme solarized
-  set colorcolumn=+1
   set mousemodel=popup
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
@@ -62,9 +65,9 @@ endif
 
 "mapovani
 " Surround info:
-  " surround yss obali aktualini lajnu
-  " vyber lajny pres virtual a nasledne S obali lajnu a tagy jsou nad i pod odstraneni tagu dst
-  " cs<znacka stara> a pak <znacka nova> zmeni obalovaci znacku
+" surround yss obali aktualini lajnu
+" vyber lajny pres virtual a nasledne S obali lajnu a tagy jsou nad i pod odstraneni tagu dst
+" cs<znacka stara> a pak <znacka nova> zmeni obalovaci znacku
 
 "'p' to paste, 'gv' to re-select what was originally selected. 'y' to copy it again.
 " xnoremap p pgvy
@@ -80,6 +83,8 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+cabbrev ve vsp
 
 nnoremap <leader>f zi<cr>
 nnoremap <leader>w :lw 6<cr>
@@ -98,6 +103,20 @@ nnoremap <leader>k <C-W>k
 " CTRL-V and SHIFT-Insert are Paste
 " map <C-V>		"+gP
 " cmap <C-V>		<C-R>+
+
+function! DispHidQfix()
+  for i in tabpagebuflist()
+    if getbufvar(i, "&buftype") == "quickfix"
+      :ccl
+      return
+    endif
+  endfor
+  :copen
+  :wincmd p
+endfunction
+
+nnoremap <F3> :vimgrep // %<left><left><left>
+nnoremap <F4> :call DispHidQfix()<CR>
 
 map <leader>m <plug>NERDCommenterToggle
 let g:NERDSpaceDelims = 1
@@ -149,6 +168,7 @@ augroup html
   autocmd BufEnter *.htm? nnoremap <buffer> <F5> :w<cr>:!chrome %:p<cr>
   " pro babel v jinje
   autocmd BufEnter *.htm? vnoremap b <Esc>`>a') }}<Esc>`<i{{ _('<Esc>
+  autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
 augroup END
 
 augroup python
@@ -163,11 +183,21 @@ augroup python
   autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto <cr>
 augroup END
 
+augroup tex
+  autocmd!
+  autocmd BufEnter *.tex iabbrev <buffer> \( \left(
+  autocmd BufEnter *.tex iabbrev <buffer> \) \right)
+  autocmd BufEnter *.tex inoremap <buffer> _ _{}<left>
+  autocmd BufEnter *.tex inoremap <buffer> ^ ^{}<left>
+augroup END
+
+augroup perl
+  autocmd!
+  autocmd BufWritePre *.pm :%s/\s\+$//e
+  autocmd BufWritePre *.pl :%s/\s\+$//e
+augroup END
+
 augroup cse
   autocmd!
   autocmd BufEnter *.cse setlocal ft=perl
-augroup END
-
-augroup filetypedetect
-  autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
 augroup END
