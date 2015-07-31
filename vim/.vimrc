@@ -103,6 +103,7 @@ nnoremap <leader>k <C-W>k
 " CTRL-V and SHIFT-Insert are Paste
 " map <C-V>		"+gP
 " cmap <C-V>		<C-R>+
+noremap <leader>s :wa<CR>
 
 function! DispHidQfix()
   for i in tabpagebuflist()
@@ -126,8 +127,9 @@ let g:syntastic_mode_map = { 'mode': 'passive'}
 let g:syntastic_error_symbol='E'
 let g:syntastic_warning_symbol='W'
 "let g:syntastic_python_checkers = ["pylint", "pep8"]
-map <leader>s :SyntasticCheck<cr>
+" map <leader>s :SyntasticCheck<cr>
 
+nnoremap <leader>p :CtrlPBuffer<CR>
 
 "python mode
 let g:pymode_rope_lookup_project = 1
@@ -174,8 +176,8 @@ augroup END
 augroup python
   autocmd!
   autocmd BufWritePre *.py :%s/\s\+$//e
-  autocmd BufEnter *.py inoremap <buffer> <F5> <esc>:w<cr>:!/usr/sw/python/anaconda/bin/python %<cr>
-  autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!/usr/sw/python/anaconda/bin/python  %<cr>
+  autocmd BufEnter *.py inoremap <buffer> <F5> <esc>:w<cr>:!python %<cr>
+  autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!python  %<cr>
   autocmd BufEnter *.py setlocal shiftwidth=4 softtabstop=4 tabstop=4 
   autocmd BufEnter *.py setlocal ft=python
   autocmd BufEnter *.py setlocal textwidth=80
@@ -201,3 +203,7 @@ augroup cse
   autocmd!
   autocmd BufEnter *.cse setlocal ft=perl
 augroup END
+
+if filereadable("_myvimrc")
+    source _myvimrc
+endif
