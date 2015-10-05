@@ -29,14 +29,17 @@ unset SSH_ASKPASS
 alias ..='cd ..'
 alias abs='abs_fce $1'
 alias grep='grep --color=auto'
+alias gk='gitk --all'
 
 if [[ $(uname) == 'FreeBSD' ]]; then
   export TERM=xterm-color
   export LSCOLORS=Exfxcxdxbxegedabagacad
   alias ll='ls -lGA'
   alias ls='ls -G'
+# Linux I guess
 else # Linux I guess
   alias ll='ls -lA --color=auto'
+  alias ls='ls --color=auto'
 fi
 
 if [[ $(vim --version | grep -c \\+X11) -eq 1 ]]; then

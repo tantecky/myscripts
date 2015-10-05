@@ -168,20 +168,24 @@ augroup html
   autocmd!
   autocmd BufEnter *.htm? inoremap <buffer> <F5> <esc>:w<cr>:!chrome %:p<cr>
   autocmd BufEnter *.htm? nnoremap <buffer> <F5> :w<cr>:!chrome %:p<cr>
+  autocmd BufWritePre *.htm? :%s/\s\+$//e
   " pro babel v jinje
   autocmd BufEnter *.htm? vnoremap b <Esc>`>a') }}<Esc>`<i{{ _('<Esc>
-  autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
+  " autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
+  autocmd BufNew,BufNewFile,BufRead *.html :set syntax=htmljinja
 augroup END
 
 augroup python
   autocmd!
   autocmd BufWritePre *.py :%s/\s\+$//e
-  autocmd BufEnter *.py inoremap <buffer> <F5> <esc>:w<cr>:!python %<cr>
-  autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!python  %<cr>
+  autocmd BufEnter *.py inoremap <buffer> <F5> <esc>:w<cr>:!/sw/bin/py2 %<cr>
+  autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!/sw/bin/py2  %<cr>
+  autocmd BufEnter *.py inoremap <buffer> <F6> <esc>:w<cr>:!/sw/bin/py3 %<cr>
+  autocmd BufEnter *.py nnoremap <buffer> <F6> :w<cr>:!/sw/bin/py3  %<cr>
   autocmd BufEnter *.py setlocal shiftwidth=4 softtabstop=4 tabstop=4 
   autocmd BufEnter *.py setlocal ft=python
   autocmd BufEnter *.py setlocal textwidth=80
-  autocmd BufEnter *.py iabbrev <buffer> ana #!/usr/sw/python/anaconda/bin/python
+  autocmd BufEnter *.py iabbrev <buffer> ana #!/sw/bin/py2
   autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto <cr>
 augroup END
 
