@@ -29,6 +29,9 @@ unset SSH_ASKPASS
 alias ..='cd ..'
 alias abs='abs_fce $1'
 alias grep='grep --color=auto'
+alias apse='sudo aptitude search'
+alias apin='sudo aptitude install'
+alias apup='sudo aptitude update'
 
 if [[ $(uname) == 'FreeBSD' ]]; then
   export TERM=xterm-color
