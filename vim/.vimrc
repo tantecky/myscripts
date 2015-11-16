@@ -126,12 +126,20 @@ let g:NERDSpaceDelims = 1
 let g:syntastic_mode_map = { 'mode': 'passive'}
 let g:syntastic_error_symbol='E'
 let g:syntastic_warning_symbol='W'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 "let g:syntastic_python_checkers = ["pylint", "pep8"]
-" map <leader>s :SyntasticCheck<cr>
+map <leader>a :SyntasticCheck<cr>
 
+"CtrlP
 nnoremap <leader>p :CtrlPBuffer<CR>
 
+"Arduino/VIM hardy
+let g:hardy_split_direction=1
+let g:hardy_window_size=10
+
 "python mode
+let g:pymode_rope = 0
 let g:pymode_rope_lookup_project = 1
 let g:pymode_rope_complete_on_dot = 0
 
@@ -203,6 +211,14 @@ augroup perl
   autocmd BufWritePre *.pl :%s/\s\+$//e
   autocmd BufEnter *.pl inoremap <buffer> <F5> <esc>:w<cr>:!perl %<cr>
   autocmd BufEnter *.pl nnoremap <buffer> <F5> :w<cr>:!perl  %<cr>
+augroup END
+
+augroup arduino
+  autocmd!
+  autocmd BufEnter *.ino,*.pde inoremap <buffer> <F5> <esc>:w<cr>:ArduinoVerify<cr>
+  autocmd BufEnter *.ino,*.pde nnoremap <buffer> <F5> :w<cr>:ArduinoVerify<cr>
+  autocmd BufEnter *.ino,*.pde inoremap <buffer> <F6> <esc>:w<cr>:ArduinoUpload<cr>
+  autocmd BufEnter *.ino,*.pde nnoremap <buffer> <F6> :w<cr>:ArduinoUpload<cr>
 augroup END
 
 augroup cse

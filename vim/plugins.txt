@@ -7,6 +7,7 @@ bundle/ultisnips/ git://github.com/SirVer/ultisnips.git
 bundle/vim-addon-mw-utils/ https://github.com/MarcWeber/vim-addon-mw-utils.git
 bundle/vim-colors-solarized/ git://github.com/altercation/vim-colors-solarized.git
 bundle/vim-fugitive/ git://github.com/tpope/vim-fugitive.git
+bundle/vim-hardy/ git://github.com/4Evergreen4/vim-hardy.git
 bundle/vim-neatstatus/ git://github.com/maciakl/vim-neatstatus.git
 bundle/vim-snippets/ https://github.com/honza/vim-snippets.git
 bundle/vim-surround/ git://github.com/tpope/vim-surround.git
