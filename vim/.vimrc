@@ -201,11 +201,14 @@ augroup perl
   autocmd!
   autocmd BufWritePre *.pm :%s/\s\+$//e
   autocmd BufWritePre *.pl :%s/\s\+$//e
+  autocmd BufEnter *.pl inoremap <buffer> <F5> <esc>:w<cr>:!perl %<cr>
+  autocmd BufEnter *.pl nnoremap <buffer> <F5> :w<cr>:!perl  %<cr>
 augroup END
 
 augroup cse
   autocmd!
   autocmd BufEnter *.cse setlocal ft=perl
+  autocmd BufWritePre *.cse :%s/\s\+$//e
 augroup END
 
 if filereadable("_myvimrc")
