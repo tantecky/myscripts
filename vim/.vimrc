@@ -207,10 +207,10 @@ augroup END
 
 augroup perl
   autocmd!
-  autocmd BufWritePre *.pm :%s/\s\+$//e
-  autocmd BufWritePre *.pl :%s/\s\+$//e
+  autocmd BufWritePre *.pm,*.pl :%s/\s\+$//e
   autocmd BufEnter *.pl inoremap <buffer> <F5> <esc>:w<cr>:!perl %<cr>
   autocmd BufEnter *.pl nnoremap <buffer> <F5> :w<cr>:!perl  %<cr>
+  autocmd BufEnter *.pl,*.pm setlocal shiftwidth=4 softtabstop=4 tabstop=4 
 augroup END
 
 augroup arduino
