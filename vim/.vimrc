@@ -98,6 +98,7 @@ nnoremap <leader>l <C-W>l
 nnoremap <leader>h <C-W>h
 nnoremap <leader>j <C-W>j
 nnoremap <leader>k <C-W>k
+nnoremap <leader>b :bd<cr>
 " CTRL-C and CTRL-Insert are Copy
 " vnoremap <C-C> "+y
 " CTRL-V and SHIFT-Insert are Paste
@@ -203,6 +204,8 @@ augroup tex
   autocmd BufEnter *.tex iabbrev <buffer> \) \right)
   autocmd BufEnter *.tex inoremap <buffer> _ _{}<left>
   autocmd BufEnter *.tex inoremap <buffer> ^ ^{}<left>
+  autocmd BufEnter *.tex inoremap <buffer> <F5> <esc>:w<cr>:!pdflatex --shell-escape %<cr>
+  autocmd BufEnter *.tex nnoremap <buffer> <F5> <esc>:w<cr>:!pdflatex --shell-escape %<cr>
 augroup END
 
 augroup perl
