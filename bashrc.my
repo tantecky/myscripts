@@ -16,6 +16,13 @@ abs_fce() {
   echo "$PWD/$1"
 }
 
+ffinfo() {
+  for file in "$@"
+  do
+    echo "$file" "$(ffmpeg -i "$file" 2>&1 | grep -Po '(Video: \w+|Audio: \w+)' | tr '\n' ' ')"
+  done
+}
+
 export LESS_TERMCAP_mb=$'\E[01;31m' \
   LESS_TERMCAP_md=$'\E[01;38;5;74m' \
   LESS_TERMCAP_me=$'\E[0m' \
@@ -33,6 +40,8 @@ alias gk='gitk --all'
 alias apse='sudo aptitude search'
 alias apin='sudo aptitude install'
 alias apup='sudo aptitude update'
+alias mp3='youtube-dl --extract-audio --audio-format mp3'
+alias ffi=ffinfo
 
 if [[ $(uname) == 'FreeBSD' ]]; then
   export TERM=xterm-color
