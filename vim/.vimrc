@@ -135,6 +135,9 @@ map <leader>a :SyntasticCheck<cr>
 "CtrlP
 nnoremap <leader>p :CtrlPBuffer<CR>
 
+"NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
+
 "Arduino/VIM hardy
 let g:hardy_split_direction=1
 let g:hardy_window_size=10
