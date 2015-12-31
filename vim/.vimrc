@@ -117,6 +117,12 @@ function! DispHidQfix()
   :wincmd p
 endfunction
 
+
+" switch between hpp/cpp
+nnoremap <F2> :FSHere<cr>
+nnoremap <leader><F2> :FSLeft<cr>
+nnoremap <leader><F3> :FSRight<cr>
+" other bindings
 nnoremap <F3> :vimgrep // %<left><left><left>
 nnoremap <F4> :call DispHidQfix()<CR>
 
