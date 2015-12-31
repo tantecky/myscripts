@@ -153,6 +153,9 @@ let g:pymode_rope = 0
 let g:pymode_rope_lookup_project = 1
 let g:pymode_rope_complete_on_dot = 0
 
+" remote trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 augroup vimscript
   autocmd!
   autocmd BufWritePost $MYVIMRC source $MYVIMRC
@@ -186,7 +189,6 @@ augroup html
   autocmd!
   autocmd BufEnter *.htm? inoremap <buffer> <F5> <esc>:w<cr>:!chrome %:p<cr>
   autocmd BufEnter *.htm? nnoremap <buffer> <F5> :w<cr>:!chrome %:p<cr>
-  autocmd BufWritePre *.htm? :%s/\s\+$//e
   " pro babel v jinje
   autocmd BufEnter *.htm? vnoremap b <Esc>`>a') }}<Esc>`<i{{ _('<Esc>
   " autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
@@ -195,7 +197,6 @@ augroup END
 
 augroup python
   autocmd!
-  autocmd BufWritePre *.py :%s/\s\+$//e
   autocmd BufEnter *.py inoremap <buffer> <F5> <esc>:w<cr>:!/sw/bin/py2 %<cr>
   autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!/sw/bin/py2  %<cr>
   autocmd BufEnter *.py inoremap <buffer> <F6> <esc>:w<cr>:!/sw/bin/py3 %<cr>
@@ -219,7 +220,6 @@ augroup END
 
 augroup perl
   autocmd!
-  autocmd BufWritePre *.pm,*.pl :%s/\s\+$//e
   autocmd BufEnter *.pl inoremap <buffer> <F5> <esc>:w<cr>:!perl %<cr>
   autocmd BufEnter *.pl nnoremap <buffer> <F5> :w<cr>:!perl  %<cr>
   autocmd BufEnter *.pl,*.pm setlocal shiftwidth=4 softtabstop=4 tabstop=4 
@@ -236,7 +236,6 @@ augroup END
 augroup cse
   autocmd!
   autocmd BufEnter *.cse setlocal ft=perl
-  autocmd BufWritePre *.cse :%s/\s\+$//e
 augroup END
 
 if filereadable("_myvimrc")
