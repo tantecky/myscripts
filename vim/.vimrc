@@ -14,7 +14,7 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab 
+set expandtab
 set textwidth=900
 "Show the line and column number of the cursor position, separated by a comma
 set ruler
@@ -201,7 +201,7 @@ augroup python
   autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!/sw/bin/py2  %<cr>
   autocmd BufEnter *.py inoremap <buffer> <F6> <esc>:w<cr>:!/sw/bin/py3 %<cr>
   autocmd BufEnter *.py nnoremap <buffer> <F6> :w<cr>:!/sw/bin/py3  %<cr>
-  autocmd BufEnter *.py setlocal shiftwidth=4 softtabstop=4 tabstop=4 
+  autocmd BufEnter *.py setlocal shiftwidth=4 softtabstop=4 tabstop=4
   autocmd BufEnter *.py setlocal ft=python
   autocmd BufEnter *.py setlocal textwidth=80
   autocmd BufEnter *.py iabbrev <buffer> ana #!/sw/bin/py2
@@ -222,7 +222,7 @@ augroup perl
   autocmd!
   autocmd BufEnter *.pl inoremap <buffer> <F5> <esc>:w<cr>:!perl %<cr>
   autocmd BufEnter *.pl nnoremap <buffer> <F5> :w<cr>:!perl  %<cr>
-  autocmd BufEnter *.pl,*.pm setlocal shiftwidth=4 softtabstop=4 tabstop=4 
+  autocmd BufEnter *.pl,*.pm setlocal shiftwidth=4 softtabstop=4 tabstop=4
 augroup END
 
 augroup arduino
