@@ -1,7 +1,15 @@
 snippet ca "About author - C style" b
 /*
  * Author: Tomas Antecky
- * Email: ${1:email}
- * Created: `date -I`
+ `if [[ ! -z $MY_COMPANY ]]; then echo '* Company:' $MY_COMPANY; fi`
+ * Email: ${1:`echo $MY_EMAIL`}
+ * Created on: `date -I`
 */
+endsnippet
+
+snippet pa "About author - Python style" b
+# Author: Tomas Antecky
+`if [[ ! -z $MY_COMPANY ]]; then echo '# Company:' $MY_COMPANY; fi`
+# Email: ${1:`echo $MY_EMAIL`}
+# Created on: `date -I`
 endsnippet

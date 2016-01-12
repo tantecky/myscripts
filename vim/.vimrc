@@ -167,12 +167,6 @@ augroup shell
   autocmd BufEnter *.sh nnoremap <buffer> <F5> :w<cr>:!bash %<cr>
 augroup END
 
-augroup c
-  autocmd!
-  autocmd BufEnter *.c inoremap <buffer> <F5> <esc>:w<cr>:make<cr>
-  autocmd BufEnter *.c nnoremap <buffer> <F5> :w<cr>:make<cr>
-augroup END
-
 augroup matlab
   autocmd!
   autocmd BufEnter *.m inoremap <buffer> <F5> <esc>:w<cr>:!octave -q %<cr>
