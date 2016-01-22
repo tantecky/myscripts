@@ -86,7 +86,7 @@ noremap <Right> <NOP>
 
 cabbrev ve vsp
 
-nnoremap <leader>f zi<cr>
+" nnoremap <leader>f zi<cr>
 nnoremap <leader>w :lw 6<cr>
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>i gg=G''<cr>
@@ -128,6 +128,12 @@ nnoremap <F4> :call DispHidQfix()<CR>
 
 map <leader>m <plug>NERDCommenterToggle
 let g:NERDSpaceDelims = 1
+
+"clang-format
+let g:clang_format#code_style='WebKit'
+nnoremap <leader>f :ClangFormat<cr>
+let g:clang_format#style_options = {
+            \ "SortIncludes" : "false"}
 
 "syntastic
 let g:syntastic_mode_map = { 'mode': 'passive'}
