@@ -135,6 +135,9 @@ nnoremap <leader>f :ClangFormat<cr>
 let g:clang_format#style_options = {
             \ "SortIncludes" : "false"}
 
+"Doxygen
+nnoremap <leader>d :Dox<cr>
+
 "syntastic
 let g:syntastic_mode_map = { 'mode': 'passive'}
 let g:syntastic_error_symbol='E'
@@ -206,6 +209,7 @@ augroup python
   autocmd BufEnter *.py setlocal textwidth=80
   autocmd BufEnter *.py iabbrev <buffer> ana #!/sw/bin/py2
   autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto <cr>
+  autocmd BufEnter *.py nmap <silent> <leader>d <Plug>(pydocstring)
 augroup END
 
 augroup tex

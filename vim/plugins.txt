@@ -1,4 +1,5 @@
 bundle/ctrlp.vim/ https://github.com/kien/ctrlp.vim.git
+bundle/DoxygenToolkit.vim/ https://github.com/vim-scripts/DoxygenToolkit.vim
 bundle/nerdcommenter/ https://github.com/scrooloose/nerdcommenter.git
 bundle/nerdtree/ https://github.com/scrooloose/nerdtree.git
 bundle/python-mode/ git://github.com/klen/python-mode.git
@@ -15,6 +16,7 @@ bundle/vim-fugitive/ git://github.com/tpope/vim-fugitive.git
 bundle/vim-hardy/ https://github.com/4Evergreen4/vim-hardy
 bundle/vim-less/ https://github.com/groenewege/vim-less
 bundle/vim-neatstatus/ git://github.com/maciakl/vim-neatstatus.git
+bundle/vim-pydocstring/ https://github.com/heavenshell/vim-pydocstring
 bundle/vim-snippets/ https://github.com/honza/vim-snippets.git
 bundle/vim-surround/ git://github.com/tpope/vim-surround.git
 bundle/vim-unimpaired/ git://github.com/tpope/vim-unimpaired.git
