@@ -226,7 +226,7 @@ augroup perl
   autocmd!
   autocmd BufEnter *.pl inoremap <buffer> <F5> <esc>:w<cr>:!perl %<cr>
   autocmd BufEnter *.pl nnoremap <buffer> <F5> :w<cr>:!perl  %<cr>
-  autocmd BufEnter *.pl,*.pm setlocal shiftwidth=4 softtabstop=4 tabstop=4
+  autocmd BufEnter *.pl,*.pm,*.cse setlocal shiftwidth=2 softtabstop=2 tabstop=2
 augroup END
 
 augroup arduino
