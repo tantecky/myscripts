@@ -123,7 +123,7 @@ nnoremap <F2> :FSHere<cr>
 nnoremap <leader><F2> :FSLeft<cr>
 nnoremap <leader><F3> :FSRight<cr>
 " other bindings
-nnoremap <F3> :vimgrep // %<left><left><left>
+nnoremap <F3> :Ack ""<left>
 nnoremap <F4> :call DispHidQfix()<CR>
 
 map <leader>m <plug>NERDCommenterToggle
