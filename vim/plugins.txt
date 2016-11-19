@@ -1,10 +1,12 @@
 bundle/ack.vim/ https://github.com/mileszs/ack.vim
 bundle/ctrlp.vim/ https://github.com/kien/ctrlp.vim.git
 bundle/DoxygenToolkit.vim/ https://github.com/vim-scripts/DoxygenToolkit.vim
+bundle/ListToggle/ https://github.com/Valloric/ListToggle
 bundle/nerdcommenter/ https://github.com/scrooloose/nerdcommenter.git
 bundle/nerdtree/ https://github.com/scrooloose/nerdtree.git
 bundle/python-mode/ git://github.com/klen/python-mode.git
 bundle/syntastic/ https://github.com/scrooloose/syntastic.git
+bundle/targets.vim/ git://github.com/wellle/targets.vim.git
 bundle/tlib_vim/ https://github.com/tomtom/tlib_vim.git
 bundle/ultisnips/ git://github.com/SirVer/ultisnips.git
 bundle/vim-addon-mw-utils/ https://github.com/MarcWeber/vim-addon-mw-utils.git
@@ -17,6 +19,7 @@ bundle/vim-fugitive/ git://github.com/tpope/vim-fugitive.git
 bundle/vim-hardy/ https://github.com/4Evergreen4/vim-hardy
 bundle/vim-less/ https://github.com/groenewege/vim-less
 bundle/vim-neatstatus/ git://github.com/maciakl/vim-neatstatus.git
+bundle/vim-OpenFoam-syntax/ https://github.com/effi/vim-OpenFoam-syntax.git
 bundle/vim-pydocstring/ https://github.com/heavenshell/vim-pydocstring
 bundle/vim-snippets/ https://github.com/honza/vim-snippets.git
 bundle/vim-surround/ git://github.com/tpope/vim-surround.git

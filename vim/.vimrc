@@ -106,25 +106,15 @@ nnoremap <leader>b :bd<cr>
 " cmap <C-V>		<C-R>+
 noremap <leader>s :wa<CR>
 
-function! DispHidQfix()
-  for i in tabpagebuflist()
-    if getbufvar(i, "&buftype") == "quickfix"
-      :ccl
-      return
-    endif
-  endfor
-  :copen
-  :wincmd p
-endfunction
-
-
 " switch between hpp/cpp
 nnoremap <F2> :FSHere<cr>
 nnoremap <leader><F2> :FSLeft<cr>
 nnoremap <leader><F3> :FSRight<cr>
 " other bindings
 nnoremap <F3> :Ack ""<left>
-nnoremap <F4> :call DispHidQfix()<CR>
+let g:lt_location_list_toggle_map = '<F4>'
+let g:lt_quickfix_list_toggle_map = '<S-F4>'
+let g:lt_height = 5
 
 map <leader>m <plug>NERDCommenterToggle
 let g:NERDSpaceDelims = 1
@@ -139,12 +129,15 @@ let g:clang_format#style_options = {
 nnoremap <leader>d :Dox<cr>
 
 "syntastic
-let g:syntastic_mode_map = { 'mode': 'passive'}
+let g:syntastic_mode_map = { 'mode': 'active'}
+let g:syntastic_loc_list_height = 5
 let g:syntastic_error_symbol='E'
 let g:syntastic_warning_symbol='W'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-"let g:syntastic_python_checkers = ["pylint", "pep8"]
+" these are too verbose
+" let g:syntastic_python_checkers = ["pylint", "pep8", "pyflakes"]
+let g:syntastic_python_checkers = ["pep8", "python"]
 map <leader>a :SyntasticCheck<cr>
 
 "CtrlP
@@ -161,6 +154,8 @@ let g:hardy_window_size=10
 let g:pymode_rope = 0
 let g:pymode_rope_lookup_project = 1
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode_lint = 1
+let g:pymode_lint_on_write= 0
 
 " remote trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
@@ -204,11 +199,13 @@ augroup python
   autocmd BufEnter *.py nnoremap <buffer> <F5> :w<cr>:!/sw/bin/py2  %<cr>
   autocmd BufEnter *.py inoremap <buffer> <F6> <esc>:w<cr>:!/sw/bin/py3 %<cr>
   autocmd BufEnter *.py nnoremap <buffer> <F6> :w<cr>:!/sw/bin/py3  %<cr>
+  autocmd BufEnter *.py inoremap <buffer> <F7> <esc>:w<cr>:!python %<cr>
+  autocmd BufEnter *.py nnoremap <buffer> <F7> :w<cr>:!python  %<cr>
   autocmd BufEnter *.py setlocal shiftwidth=4 softtabstop=4 tabstop=4
   autocmd BufEnter *.py setlocal ft=python
   autocmd BufEnter *.py setlocal textwidth=80
   autocmd BufEnter *.py iabbrev <buffer> ana #!/sw/bin/py2
-  autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto <cr>
+  autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto<cr>:SyntasticCheck<cr>
   autocmd BufEnter *.py nmap <silent> <leader>d <Plug>(pydocstring)
 augroup END
 
