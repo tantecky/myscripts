@@ -128,6 +128,9 @@ let g:clang_format#style_options = {
 "Doxygen
 nnoremap <leader>d :Dox<cr>
 
+"pydocstring
+let g:pydocstring_enable_mapping = 0
+
 "syntastic
 let g:syntastic_mode_map = { 'mode': 'active'}
 let g:syntastic_loc_list_height = 5
@@ -141,7 +144,11 @@ let g:syntastic_python_checkers = ["pep8", "python"]
 map <leader>a :SyntasticCheck<cr>
 
 "CtrlP
-nnoremap <leader>p :CtrlPBuffer<CR>
+" Use the nearest .git directory as the cwd
+" This makes a lot of sense if you are working on a project that is in version
+" control. It also supports works with .svn, .hg, .bzr.
+let g:ctrlp_working_path_mode = 'r'
+nnoremap <C-l> :CtrlPBuffer<CR>
 
 "NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
