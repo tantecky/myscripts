@@ -10,6 +10,7 @@ bundle/targets.vim/ git://github.com/wellle/targets.vim.git
 bundle/tlib_vim/ https://github.com/tomtom/tlib_vim.git
 bundle/ultisnips/ git://github.com/SirVer/ultisnips.git
 bundle/vim-addon-mw-utils/ https://github.com/MarcWeber/vim-addon-mw-utils.git
+bundle/vim-autoformat/ https://github.com/Chiel92/vim-autoformat
 bundle/vim-clang-format/ https://github.com/rhysd/vim-clang-format
 bundle/vim-colors-solarized/ git://github.com/altercation/vim-colors-solarized.git
 bundle/vim-css3-syntax/ https://github.com/hail2u/vim-css3-syntax.git

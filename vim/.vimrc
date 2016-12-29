@@ -141,6 +141,7 @@ let g:syntastic_auto_loc_list = 1
 " these are too verbose
 " let g:syntastic_python_checkers = ["pylint", "pep8", "pyflakes"]
 let g:syntastic_python_checkers = ["pep8", "python"]
+let g:syntastic_javascript_checkers = ["eslint"]
 map <leader>a :SyntasticCheck<cr>
 
 "CtrlP
@@ -178,6 +179,11 @@ augroup shell
   autocmd BufEnter *.sh nnoremap <buffer> <F5> :w<cr>:!bash %<cr>
 augroup END
 
+augroup javascript
+  autocmd!
+  autocmd BufEnter *.js nnoremap <buffer> <leader>f :Autoformat<cr>
+augroup END
+
 augroup matlab
   autocmd!
   autocmd BufEnter *.m inoremap <buffer> <F5> <esc>:w<cr>:!octave -q %<cr>
@@ -194,6 +200,7 @@ augroup html
   autocmd!
   autocmd BufEnter *.htm? inoremap <buffer> <F5> <esc>:w<cr>:!chrome %:p<cr>
   autocmd BufEnter *.htm? nnoremap <buffer> <F5> :w<cr>:!chrome %:p<cr>
+  autocmd BufEnter *.htm? nnoremap <buffer> <leader>f :Autoformat<cr>
   " pro babel v jinje
   autocmd BufEnter *.htm? vnoremap b <Esc>`>a') }}<Esc>`<i{{ _('<Esc>
   " autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja
