@@ -35,7 +35,7 @@ set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
 set wildmode=full
-set colorcolumn=81
+set colorcolumn=80
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 
@@ -139,8 +139,7 @@ let g:syntastic_warning_symbol='W'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 " these are too verbose
-" let g:syntastic_python_checkers = ["pylint", "pep8", "pyflakes"]
-let g:syntastic_python_checkers = ["pep8", "python"]
+let g:syntastic_python_checkers = ["flake8", "python", "pyflakes"]
 let g:syntastic_javascript_checkers = ["eslint"]
 map <leader>a :SyntasticCheck<cr>
 
