@@ -110,8 +110,17 @@ noremap <leader>s :wa<CR>
 nnoremap <F2> :FSHere<cr>
 nnoremap <leader><F2> :FSLeft<cr>
 nnoremap <leader><F3> :FSRight<cr>
-" other bindings
-nnoremap <F3> :Ack ""<left>
+
+" ack
+function! RunAck(arg)
+  if exists("g:project_dir")
+    call ack#Ack('grep ' . a:arg, g:project_dir)
+  else
+    call ack#Ack('grep ' . a:arg, '.')
+  endif
+endfunction
+
+nnoremap <F3> :call RunAck("")<left><left>
 let g:lt_location_list_toggle_map = '<F4>'
 let g:lt_quickfix_list_toggle_map = '<S-F4>'
 let g:lt_height = 5
