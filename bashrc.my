@@ -46,9 +46,9 @@ alias ..='cd ..'
 alias abs='abs_fce $1'
 alias grep='grep --color=auto'
 alias gk='gitk --all'
-alias apse='sudo aptitude search'
-alias apin='sudo aptitude install'
-alias apup='sudo aptitude update'
+alias apse='sudo apt search'
+alias apin='sudo apt install'
+alias apup='sudo apt update'
 alias mp3='youtube-dl --extract-audio --audio-format mp3'
 alias ffi=ffinfo
 alias 2ac3=convert2ac3
