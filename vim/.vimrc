@@ -36,6 +36,7 @@ set backspace=indent,eol,start
 set wildmenu
 set wildmode=full
 set colorcolumn=80
+set synmaxcol=80
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 
