@@ -51,7 +51,35 @@ alias apin='sudo apt install'
 alias apup='sudo apt update'
 alias mp3='youtube-dl --extract-audio --audio-format mp3'
 alias ffi=ffinfo
+alias dw="youtube-dl -f 22 $1"
 alias 2ac3=convert2ac3
+alias ard="$HOME/arduino/arduino"
+
+git() {
+  if [[ $1 == "st" ]]; then
+    shift
+    command git status "$@"
+  elif [[ $1 == "f" ]]; then
+    shift
+    command git fetch "$@"
+  elif [[ $1 == "b" ]]; then
+    shift
+    command git branch "$@"
+  elif [[ $1 == "r" ]]; then
+    shift
+    command git rebase "$@"
+  elif [[ $1 == "ci" ]]; then
+    shift
+    command git commit "$@"
+  elif [[ $1 == "co" ]]; then
+    shift
+    command git "checkout" "$@"
+  elif [[ $1 == "ls" ]]; then
+    command git log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]' --decorate --graph
+  else
+    command git "$@"
+  fi
+}
 
 if [[ $(uname) == 'FreeBSD' ]]; then
   export TERM=xterm-color
