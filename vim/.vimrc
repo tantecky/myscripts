@@ -262,6 +262,11 @@ augroup cse
   autocmd BufEnter *.cse setlocal ft=perl
 augroup END
 
+augroup asm
+  autocmd!
+  autocmd BufEnter *.asm setlocal ft=nasm
+augroup END
+
 if filereadable("_myvimrc")
     source _myvimrc
 endif
