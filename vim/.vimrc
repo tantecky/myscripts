@@ -151,6 +151,7 @@ let g:syntastic_auto_loc_list = 1
 " these are too verbose
 let g:syntastic_python_checkers = ["flake8", "python", "pyflakes"]
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_nasm_nasm_args = "-f elf64"
 map <leader>a :SyntasticCheck<cr>
 
 "CtrlP
