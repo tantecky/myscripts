@@ -2,8 +2,8 @@
 set -u
 set -e
 
-curl -sL http://tinyurl.com/dotvimrc | bash
-curl -sL http://tinyurl.com/dotbashrc | bash
+curl -sL https://raw.githubusercontent.com/tantecky/myscripts/master/vim/bootstrap.sh | bash
+curl -sL https://raw.githubusercontent.com/tantecky/myscripts/master/bashrc_bootstrap.sh | bash
 
 # other small stuff
 ln -sf ~/myscripts/tmux.conf ~/.tmux.conf
