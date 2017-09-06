@@ -160,6 +160,7 @@ map <leader>a :SyntasticCheck<cr>
 " control. It also supports works with .svn, .hg, .bzr.
 let g:ctrlp_working_path_mode = 'r'
 nnoremap <C-l> :CtrlPBuffer<CR>
+nnoremap <C-k> :CtrlPMRU<CR>
 
 "NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
