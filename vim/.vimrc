@@ -61,6 +61,10 @@ else
   colorscheme delek
 endif
 
+set cursorline
+hi CursorLineNr term=bold cterm=bold ctermfg=3 gui=bold guifg=Gray
+hi CursorLine term=NONE cterm=NONE
+
 " presune obsah schranky do * registru
 " set clipboard=unnamed
 
