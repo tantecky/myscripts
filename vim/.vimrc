@@ -37,6 +37,7 @@ set wildmenu
 set wildmode=full
 set colorcolumn=80
 set synmaxcol=80
+set nowrap
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 
@@ -104,6 +105,7 @@ nnoremap <leader>h <C-W>h
 nnoremap <leader>j <C-W>j
 nnoremap <leader>k <C-W>k
 nnoremap <leader>b :bd<cr>
+nnoremap <leader>p :TlistToggle<cr>
 " CTRL-C and CTRL-Insert are Copy
 " vnoremap <C-C> "+y
 " CTRL-V and SHIFT-Insert are Paste
@@ -173,14 +175,8 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 let g:hardy_split_direction=1
 let g:hardy_window_size=10
 
-"python mode
-let g:pymode_rope = 0
-" hodne zpomaluje
-let g:pymode_folding = 0
-let g:pymode_rope_lookup_project = 1
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_lint = 1
-let g:pymode_lint_on_write= 0
+"autopep8
+let g:autopep8_disable_show_diff=0
 
 " remote trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
@@ -236,7 +232,7 @@ augroup python
   autocmd BufEnter *.py setlocal ft=python
   autocmd BufEnter *.py setlocal textwidth=80
   autocmd BufEnter *.py iabbrev <buffer> ana #!/sw/bin/py2
-  autocmd BufEnter *.py nnoremap <buffer> <leader>8 :PymodeLintAuto<cr>:SyntasticCheck<cr>
+  autocmd BufEnter *.py nnoremap <buffer> <leader>8 :Autopep8<cr>:SyntasticCheck<cr>
   autocmd BufEnter *.py nmap <silent> <leader>d <Plug>(pydocstring)
 augroup END
 
