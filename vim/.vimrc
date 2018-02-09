@@ -158,6 +158,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_python_checkers = ["flake8", "python", "pyflakes"]
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_nasm_nasm_args = "-f elf64"
+let g:syntastic_cpp_compiler_options = "-std=gnu++11"
 map <leader>a :SyntasticCheck<cr>
 
 "CtrlP
