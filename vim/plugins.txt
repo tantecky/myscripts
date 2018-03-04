@@ -20,6 +20,7 @@ bundle/vim-css-color/ https://github.com/skammer/vim-css-color
 bundle/vim-fswitch/ https://github.com/derekwyatt/vim-fswitch
 bundle/vim-fugitive/ git://github.com/tpope/vim-fugitive.git
 bundle/vim-hardy/ https://github.com/4Evergreen4/vim-hardy
+bundle/vim-javascript-syntax/ https://github.com/jelera/vim-javascript-syntax
 bundle/vim-less/ https://github.com/groenewege/vim-less
 bundle/vim-neatstatus/ git://github.com/maciakl/vim-neatstatus.git
 bundle/vim-OpenFoam-syntax/ https://github.com/effi/vim-OpenFoam-syntax.git
