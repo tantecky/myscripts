@@ -161,6 +161,8 @@ let g:syntastic_nasm_nasm_args = "-f elf64"
 let g:syntastic_cpp_compiler_options = "-std=gnu++11"
 map <leader>a :SyntasticCheck<cr>
 
+let g:python_highlight_all = 1
+
 "CtrlP
 " Use the nearest .git directory as the cwd
 " This makes a lot of sense if you are working on a project that is in version
