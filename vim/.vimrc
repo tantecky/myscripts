@@ -215,6 +215,7 @@ augroup html
   autocmd BufEnter *.htm? inoremap <buffer> <F5> <esc>:w<cr>:!chrome %:p<cr>
   autocmd BufEnter *.htm? nnoremap <buffer> <F5> :w<cr>:!chrome %:p<cr>
   autocmd BufEnter *.htm? nnoremap <buffer> <leader>f :Autoformat<cr>
+  autocmd BufEnter *.htm? setlocal synmaxcol=0
   " pro babel v jinje
   autocmd BufEnter *.htm? vnoremap b <Esc>`>a') }}<Esc>`<i{{ _('<Esc>
   " autocmd BufNew,BufNewFile,BufRead *.html :set filetype=htmljinja

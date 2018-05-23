@@ -4,6 +4,7 @@ bundle/DoxygenToolkit.vim/ https://github.com/vim-scripts/DoxygenToolkit.vim
 bundle/ListToggle/ https://github.com/Valloric/ListToggle
 bundle/nerdcommenter/ https://github.com/scrooloose/nerdcommenter.git
 bundle/nerdtree/ https://github.com/scrooloose/nerdtree.git
+bundle/python-syntax/ https://github.com/vim-python/python-syntax
 bundle/SearchComplete/ https://github.com/vim-scripts/SearchComplete.git
 bundle/syntastic/ https://github.com/scrooloose/syntastic.git
 bundle/taglist.vim/ https://github.com/vim-scripts/taglist.vim.git
