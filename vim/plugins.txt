@@ -29,3 +29,4 @@ bundle/vim-pydocstring/ https://github.com/heavenshell/vim-pydocstring
 bundle/vim-snippets/ https://github.com/honza/vim-snippets.git
 bundle/vim-surround/ git://github.com/tpope/vim-surround.git
 bundle/vim-unimpaired/ git://github.com/tpope/vim-unimpaired.git
+bundle/vim-vue/ https://github.com/posva/vim-vue.git

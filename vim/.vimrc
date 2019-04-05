@@ -200,6 +200,11 @@ augroup javascript
   autocmd BufEnter *.js nnoremap <buffer> <leader>f :Autoformat<cr>
 augroup END
 
+augroup vue
+  autocmd!
+  autocmd BufEnter *.vue nnoremap <buffer> <leader>f :Autoformat<cr>
+augroup END
+
 augroup matlab
   autocmd!
   autocmd BufEnter *.m inoremap <buffer> <F5> <esc>:w<cr>:!octave -q %<cr>
