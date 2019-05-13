@@ -10,7 +10,6 @@ bundle/syntastic/ https://github.com/scrooloose/syntastic.git
 bundle/taglist.vim/ https://github.com/vim-scripts/taglist.vim.git
 bundle/targets.vim/ git://github.com/wellle/targets.vim.git
 bundle/tlib_vim/ https://github.com/tomtom/tlib_vim.git
-bundle/ultisnips/ git://github.com/SirVer/ultisnips.git
 bundle/vim-addon-mw-utils/ https://github.com/MarcWeber/vim-addon-mw-utils.git
 bundle/vim-autoformat/ https://github.com/Chiel92/vim-autoformat
 bundle/vim-autopep8/ https://github.com/tell-k/vim-autopep8.git
@@ -26,6 +25,7 @@ bundle/vim-less/ https://github.com/groenewege/vim-less
 bundle/vim-neatstatus/ git://github.com/maciakl/vim-neatstatus.git
 bundle/vim-OpenFoam-syntax/ https://github.com/effi/vim-OpenFoam-syntax.git
 bundle/vim-pydocstring/ https://github.com/heavenshell/vim-pydocstring
+bundle/vim-snipmate/ https://github.com/garbas/vim-snipmate.git
 bundle/vim-snippets/ https://github.com/honza/vim-snippets.git
 bundle/vim-surround/ git://github.com/tpope/vim-surround.git
 bundle/vim-unimpaired/ git://github.com/tpope/vim-unimpaired.git
