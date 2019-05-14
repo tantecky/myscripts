@@ -93,10 +93,5 @@ else # Linux I guess
   alias ls='ls --color=auto'
 fi
 
-if [[ $(vim --version | grep -c \\+X11) -eq 1 ]]; then
-  alias v='vim --remote-silent'
-  alias g='gvim --remote-silent'
-else
-  alias v='vim'
-  alias g='gvim'
-fi
+alias v='vim'
+alias g='gvim'
