@@ -90,6 +90,8 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+noremap <F5> :redraw!<cr>
+
 cabbrev ve vsp
 
 " nnoremap <leader>f zi<cr>
