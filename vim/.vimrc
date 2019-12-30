@@ -38,6 +38,7 @@ set wildmode=full
 set colorcolumn=80
 set synmaxcol=80
 set nowrap
+set splitright
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 
@@ -182,6 +183,13 @@ let g:hardy_window_size=10
 
 "autopep8
 let g:autopep8_disable_show_diff=0
+
+"autoformat debug
+" let g:autoformat_verbosemode=1
+let g:formatdef_my_custom_js = '"js-beautify"'
+let g:formatters_javascript = ['my_custom_js']
+let g:formatdef_my_custom_vue = '"vue-formatter"'
+let g:formatters_vue = ['my_custom_vue']
 
 " remote trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e

@@ -29,4 +29,4 @@ bundle/vim-snipmate/ https://github.com/garbas/vim-snipmate.git
 bundle/vim-snippets/ https://github.com/honza/vim-snippets.git
 bundle/vim-surround/ git://github.com/tpope/vim-surround.git
 bundle/vim-unimpaired/ git://github.com/tpope/vim-unimpaired.git
-bundle/vim-vue/ https://github.com/posva/vim-vue.git
+bundle/vim-vue-plugin/ https://github.com/leafOfTree/vim-vue-plugin
