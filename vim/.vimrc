@@ -213,6 +213,7 @@ augroup END
 augroup vue
   autocmd!
   autocmd BufEnter *.vue nnoremap <buffer> <leader>f :Autoformat<cr>
+  autocmd BufEnter *.vue setlocal synmaxcol=0
 augroup END
 
 augroup matlab
