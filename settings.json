@@ -1,0 +1,38 @@
+{
+  "python.pythonPath": "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Anaconda3_64\\python.exe",
+  "telemetry.enableTelemetry": false,
+  "files.trimTrailingWhitespace": true,
+  "vim.leader": ",",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":wa"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "after": ["g", "c", "c"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":wa"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "after": ["g", "c", "c"]
+    }
+  ],
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "vetur.format.defaultFormatter.html": "prettier",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
