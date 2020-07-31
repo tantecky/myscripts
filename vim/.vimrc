@@ -83,6 +83,8 @@ hi CursorLine term=NONE cterm=NONE
 " nnoremap p "0p
 " nnoremap P "0P
 
+map Q @q
+
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
