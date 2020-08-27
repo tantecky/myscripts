@@ -95,3 +95,4 @@ fi
 
 alias v='vim'
 alias g='gvim'
+alias gs='git status'
