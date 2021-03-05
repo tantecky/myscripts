@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
