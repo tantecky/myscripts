@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
+  "python.pythonPath": "C:\\Users\\antecky\\AppData\\Local\\Continuum\\anaconda3\\python.exe",
   "telemetry.enableTelemetry": false,
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
@@ -44,5 +44,16 @@
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
-  }
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "cmake.configureOnOpen": false
 }
