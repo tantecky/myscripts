@@ -193,6 +193,8 @@ let g:formatters_javascript = ['my_custom_js']
 let g:formatdef_my_custom_vue = '"vue-formatter"'
 let g:formatters_vue = ['my_custom_vue']
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 " remote trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
