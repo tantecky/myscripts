@@ -55,5 +55,10 @@
       "filenamePattern": "*.ipynb"
     }
   ],
-  "cmake.configureOnOpen": false
+  "cmake.configureOnOpen": false,
+  "vim.useCtrlKeys": false,
+  "go.toolsManagement.autoUpdate": true,
+  "files.associations": {
+    "*.j2": "html"
+  }
 }
