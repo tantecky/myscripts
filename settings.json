@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "C:\\Users\\antecky\\AppData\\Local\\Continuum\\anaconda3\\python.exe",
+  "python.pythonPath": "E:\\Programy\\Anaconda3\\python.exe",
   "telemetry.enableTelemetry": false,
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
@@ -24,6 +24,8 @@
     }
   ],
   "editor.formatOnSave": true,
+  "editor.rulers": [80],
+  "editor.minimap.enabled": false
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.semi": false,
@@ -45,20 +47,19 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "[go]": {
+    "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
-  "cmake.configureOnOpen": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   "vim.useCtrlKeys": false,
   "go.toolsManagement.autoUpdate": true,
   "files.associations": {
     "*.j2": "html"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
   }
 }
