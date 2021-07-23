@@ -54,7 +54,14 @@ alias ffi=ffinfo
 alias dw="youtube-dl -f 22 $1"
 alias 2ac3=convert2ac3
 alias ard="$HOME/arduino/arduino"
-alias gst="git status"
+
+# Docker stuff
+alias di='docker images'
+alias de='docker exec'
+alias dc='docker container'
+alias dr='docker run --rm'
+alias db='docker build'
+alias dps='docker ps -a'
 
 git() {
   if [[ $1 == "st" ]]; then
