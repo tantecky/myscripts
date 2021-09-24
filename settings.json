@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "E:\\Programy\\Anaconda3\\python.exe",
+  "python.pythonPath": "C:\\Users\\antecky\\AppData\\Local\\Continuum\\anaconda3\\python.exe",
   "telemetry.enableTelemetry": false,
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
@@ -25,7 +25,7 @@
   ],
   "editor.formatOnSave": true,
   "editor.rulers": [80],
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.semi": false,
