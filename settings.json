@@ -44,10 +44,7 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-    "[go]": {
+  "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
   "workbench.editorAssociations": {
