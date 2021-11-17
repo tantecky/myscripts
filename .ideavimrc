@@ -1,0 +1,6 @@
+let mapleader = ","
+
+se incsearch
+se hlsearch
+
+map <leader>s :action SaveAll<CR>
