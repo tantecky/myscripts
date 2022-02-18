@@ -15,6 +15,11 @@ function gitStatus{
     git status
 }
 
+function gitFetch{
+    git fetch --all --prune
+}
+
 Set-Alias gk runGitk
 Set-Alias gs gitStatus
+Set-Alias gf gitFetch
 Set-Alias g runGvim
