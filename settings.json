@@ -23,7 +23,7 @@
     }
   ],
   "editor.formatOnSave": true,
-  "editor.rulers": [80],
+  "editor.rulers": [79],
   "editor.minimap.enabled": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
