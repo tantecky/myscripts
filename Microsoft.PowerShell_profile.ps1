@@ -6,11 +6,6 @@ function runGvim{
     Start-Process -FilePath "C:\Programy\Vim\vim82\gvim.exe"
 }
 
-
-function py3{
-    & 'E:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\python.exe' $args
-}
-
 function gitStatus{
     git status
 }
@@ -19,7 +14,17 @@ function gitFetch{
     git fetch --all --prune
 }
 
+function gitBranchDel{
+    git branch -D $args
+}
+
+function gitBranchVerbose{
+    git branch -v
+}
+
 Set-Alias gk runGitk
+Set-Alias g runGvim
 Set-Alias gs gitStatus
 Set-Alias gf gitFetch
-Set-Alias g runGvim
+Set-Alias gd gitBranchDel
+Set-Alias gb gitBranchVerbose
