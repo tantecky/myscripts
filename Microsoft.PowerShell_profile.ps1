@@ -19,7 +19,7 @@ function gitBranchDel{
 }
 
 function gitBranchVerbose{
-    git branch -v
+    git branch -va
 }
 
 Set-Alias gk runGitk
