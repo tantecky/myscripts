@@ -62,5 +62,6 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
   },
-  "nrf-connect.welcome.showOnStartup": false
+  "nrf-connect.welcome.showOnStartup": false,
+  "rust-analyzer.check.command": "clippy"
 }
