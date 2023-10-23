@@ -1,5 +1,6 @@
 {
   "telemetry.enableTelemetry": false,
+  "editor.insertSpaces": true,
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -62,6 +63,13 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
   },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
   "nrf-connect.welcome.showOnStartup": false,
-  "rust-analyzer.check.command": "clippy"
+  "rust-analyzer.check.command": "clippy",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "cmake.configureOnOpen": false,
+  "redhat.telemetry.enabled": false,
+  "git.openRepositoryInParentFolders": "always"
 }
