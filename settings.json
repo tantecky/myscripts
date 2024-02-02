@@ -71,5 +71,6 @@
   "dotnetAcquisitionExtension.enableTelemetry": false,
   "cmake.configureOnOpen": false,
   "redhat.telemetry.enabled": false,
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "security.restrictUNCAccess": false
 }
