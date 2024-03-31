@@ -1,5 +1,5 @@
 {
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "editor.insertSpaces": true,
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
@@ -11,6 +11,37 @@
     {
       "before": ["<leader>", "m"],
       "after": ["g", "c", "c"]
+    },
+    {
+      "before": ["U"],
+      "commands": ["extension.vim_ctrl+r"]
+    },
+    {
+      "before": ["<leader>", "v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.splitEditor"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusFirstEditorGroup"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusSecondEditorGroup"
+        }
+      ]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
