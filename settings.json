@@ -4,6 +4,10 @@
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
     {
       "before": ["<leader>", "s"],
       "commands": [":wa"]
@@ -103,5 +107,6 @@
   "cmake.configureOnOpen": false,
   "redhat.telemetry.enabled": false,
   "git.openRepositoryInParentFolders": "always",
-  "security.restrictUNCAccess": false
+  "security.restrictUNCAccess": false,
+  "security.workspace.trust.untrustedFiles": "open"
 }
