@@ -85,7 +85,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "vim.useCtrlKeys": false,
+  "vim.useCtrlKeys": true,
   "go.toolsManagement.autoUpdate": true,
   "files.associations": {
     "*.j2": "html"
