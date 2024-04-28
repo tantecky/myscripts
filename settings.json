@@ -101,6 +101,9 @@
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
+  "[templ]": {
+    "editor.defaultFormatter": "a-h.templ"
+  },
   "nrf-connect.welcome.showOnStartup": false,
   "rust-analyzer.check.command": "clippy",
   "dotnetAcquisitionExtension.enableTelemetry": false,
