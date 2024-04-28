@@ -1,5 +1,6 @@
 {
   "telemetry.telemetryLevel": "off",
+  "editor.lineNumbers": "relative",
   "editor.insertSpaces": true,
   "files.trimTrailingWhitespace": true,
   "vim.leader": ",",
