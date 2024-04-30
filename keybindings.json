@@ -11,7 +11,7 @@
     "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
   },
   {
-    "key": "ctrl+alt+t",
+    "key": "ctrl+t",
     "command": "workbench.action.terminal.kill"
   },
   {
@@ -97,5 +97,14 @@
   {
     "key": "ctrl+e",
     "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-extension.vim_ctrl+t",
+    "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
   }
 ]
