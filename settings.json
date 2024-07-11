@@ -78,10 +78,10 @@
   },
   "git.ignoreWindowsGit27Warning": true,
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
@@ -115,5 +115,6 @@
   "redhat.telemetry.enabled": false,
   "git.openRepositoryInParentFolders": "always",
   "security.restrictUNCAccess": false,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "cmake.showOptionsMovedNotification": false
 }
