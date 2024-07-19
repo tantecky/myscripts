@@ -1,5 +1,7 @@
 {
   "telemetry.telemetryLevel": "off",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 8,
   "editor.lineNumbers": "relative",
   "editor.insertSpaces": true,
   "files.trimTrailingWhitespace": true,
