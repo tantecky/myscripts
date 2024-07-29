@@ -17,7 +17,7 @@ fi
 
 cd $VIM_DIR
 
-./update_plugins.sh
+# ./update_plugins.sh
 rm -rf ~/.vimrc
 rm -rf ~/.vim
 cd ~
