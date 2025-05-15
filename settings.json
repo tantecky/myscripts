@@ -118,5 +118,10 @@
   "git.openRepositoryInParentFolders": "always",
   "security.restrictUNCAccess": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "cmake.showOptionsMovedNotification": false
+  "cmake.showOptionsMovedNotification": false,
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }
