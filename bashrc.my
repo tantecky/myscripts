@@ -104,6 +104,7 @@ alias v='vim'
 alias g='gvim'
 alias gs='git status'
 alias gf='git fetch --all --prune'
+alias gcom='git commit'
 
 set -o vi
 export HISTCONTROL=ignoreboth:erasedups

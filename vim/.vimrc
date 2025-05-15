@@ -60,7 +60,7 @@ if has('gui_running')
     set guifont=Courier_New:h10:cEASTEUROPE
   endif
 else
-  colorscheme delek
+  colorscheme sorbet
 endif
 
 set cursorline
