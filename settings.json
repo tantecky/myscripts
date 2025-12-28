@@ -95,7 +95,8 @@
   "go.toolsManagement.autoUpdate": true,
   "files.associations": {
     "*.j2": "html",
-    "*.cf": "nginx"
+    "*.cf": "nginx",
+    "*.conf*": "nginx"
   },
   "notebook.cellToolbarLocation": {
     "default": "right",
