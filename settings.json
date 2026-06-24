@@ -16,53 +16,53 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
     {
       "before": ["<leader>", "s"],
-      "commands": [":wa"],
+      "commands": [":wa"]
     },
     {
       "before": ["<leader>", "m"],
-      "after": ["g", "c", "c"],
+      "after": ["g", "c", "c"]
     },
     {
       "before": ["U"],
-      "commands": ["extension.vim_ctrl+r"],
+      "commands": ["extension.vim_ctrl+r"]
     },
     {
       "before": ["<leader>", "v"],
       "after": [],
       "commands": [
         {
-          "command": "workbench.action.splitEditor",
-        },
-      ],
+          "command": "workbench.action.splitEditor"
+        }
+      ]
     },
     {
       "before": ["<leader>", "h"],
       "after": [],
       "commands": [
         {
-          "command": "workbench.action.focusFirstEditorGroup",
-        },
-      ],
+          "command": "workbench.action.focusFirstEditorGroup"
+        }
+      ]
     },
     {
       "before": ["<leader>", "l"],
       "after": [],
       "commands": [
         {
-          "command": "workbench.action.focusSecondEditorGroup",
-        },
-      ],
-    },
+          "command": "workbench.action.focusSecondEditorGroup"
+        }
+      ]
+    }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "s"],
-      "commands": [":wa"],
+      "commands": [":wa"]
     },
     {
       "before": ["<leader>", "m"],
-      "after": ["g", "c", "c"],
-    },
+      "after": ["g", "c", "c"]
+    }
   ],
   "editor.formatOnSave": true,
   "editor.rulers": [79],
@@ -73,42 +73,44 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "vetur.format.defaultFormatter.html": "prettier",
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreWindowsGit27Warning": true,
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[c]": {
-    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go",
+    "editor.defaultFormatter": "golang.go"
   },
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook",
+    "*.ipynb": "jupyter-notebook"
   },
   "vim.useCtrlKeys": true,
   "go.toolsManagement.autoUpdate": true,
   "files.associations": {
     "*.j2": "html",
+    "*.cf": "nginx",
+    "*.conf*": "nginx"
   },
   "notebook.cellToolbarLocation": {
     "default": "right",
-    "jupyter-notebook": "left",
+    "jupyter-notebook": "left"
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "[templ]": {
-    "editor.defaultFormatter": "a-h.templ",
+    "editor.defaultFormatter": "a-h.templ"
   },
   "nrf-connect.welcome.showOnStartup": false,
   "rust-analyzer.check.command": "clippy",
@@ -122,10 +124,10 @@
   "terminal.integrated.env.linux": {},
   "console-ninja.featureSet": "Community",
   "[java]": {
-    "editor.defaultFormatter": "redhat.java",
+    "editor.defaultFormatter": "redhat.java"
   },
   "workbench.editor.empty.hint": "hidden",
   "workbench.colorTheme": "Dark Modern",
   "terminal.integrated.initialHint": false,
-  "chat.disableAIFeatures": true,
+  "chat.disableAIFeatures": true
 }
