@@ -28,3 +28,4 @@ Set-Alias gf gitFetch
 Set-Alias gd gitBranchDel
 Set-Alias gb gitBranchVerbose
 Set-Alias gcom gitCommit
+Set-Alias op opencode
